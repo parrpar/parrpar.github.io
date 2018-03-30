@@ -18,24 +18,22 @@ To compile:
   src: local('Kanit Light'), local('Kanit-Light'), url(https://fonts.gstatic.com/s/kanit/v3/nKKU-Go6G5tXcr4-ORWzVaQ.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Itim';
+  font-family: 'Cairo';
   font-style: normal;
   font-weight: 400;
-  src: local('Itim'), local('Itim-Regular'), url(https://fonts.gstatic.com/s/itim/v2/0nknC9ziJOYe8ANAlQ.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Oswald';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Oswald Regular'), local('Oswald-Regular'), url(https://fonts.gstatic.com/s/oswald/v16/TK3iWkUHHAIjg752GT8D.ttf) format('truetype');
+  src: local('Cairo'), local('Cairo-Regular'), url(https://fonts.gstatic.com/s/cairo/v3/SLXGc1nY6HkvalIhTp4.ttf) format('truetype');
 }
 /*---General Setting---*/
 body {
   padding-top: 0px;
 }
 h1 {
-  color: #FF00FF;
-  font-family: 'Itim';
+  color: #AD1414;
+  font-family: 'Cairo';
+}
+h2 {
+  color: #AD1414;
+  font-family: 'Cairo';
 }
 .banner {
   padding: 0px 0px;
@@ -44,7 +42,7 @@ h1 {
 /*---Button---*/
 .btn-primary {
   color: #ffffff;
-  background-color: #FF00FF;
+  background-color: #AD1414;
   border-color: #000000;
 }
 .btn-primary:hover,
@@ -54,7 +52,7 @@ h1 {
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
   color: #ffffff;
-  background-color: #cc00cc;
+  background-color: #7f0f0f;
   border-color: #000000;
 }
 .btn-primary:active,
@@ -81,17 +79,17 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #FF00FF;
+  background-color: #AD1414;
   border-color: #000000;
 }
 .btn-primary .badge {
-  color: #FF00FF;
+  color: #AD1414;
   background-color: #ffffff;
 }
 header.masthead {
   text-align: center;
   color: #fff;
-  background-image: url(../img/banner.jpg);
+  background-image: url(../img/header.jpg);
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -116,7 +114,7 @@ img {
   -moz-transition: all ease .5s;
   transition: all ease .5s;
   opacity: 0;
-  background: #FF00FF;
+  background: rgba(173, 20, 20, 0.8);
 }
 /*---Responsive (Bootstrap Standard)---*/
 /* Only Large devices (LG) */

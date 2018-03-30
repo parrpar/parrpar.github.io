@@ -7,8 +7,7 @@ To compile:
 */
 
 @import "https://fonts.googleapis.com/css?family=Kanit:300,300i&subset=thai";
-@import "https://fonts.googleapis.com/css?family=Itim";
-@import "https://fonts.googleapis.com/css?family=Oswald";
+@import url('https://fonts.googleapis.com/css?family=Cairo');
 @import "_variables.less";
 @import "_mixins.less";
 
@@ -20,6 +19,12 @@ h1{
   color:@color-theme-primary;
   font-family: @font-primary;
 }
+
+h2{
+  color:@color-theme-primary;
+  font-family: @font-primary;
+}
+
 .banner{
   padding: 0px 0px;
   background:#eeeeee;
@@ -36,7 +41,7 @@ h1{
 header.masthead {
     text-align: center;
     color: #fff;
-    background-image: url(../img/banner.jpg);
+    background-image: url(../img/header.jpg);
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -63,7 +68,7 @@ img {
     -moz-transition: all ease .5s;
     transition: all ease .5s;
     opacity: 0;
-    background: @color-theme-primary;
+    background: rgba(173,20,20,.8);
 }
 
 /*---Responsive (Bootstrap Standard)---*/
