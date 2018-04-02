@@ -27,15 +27,20 @@ To compile:
 body {
   padding-top: 0px;
 }
-h1 {
+body h1 {
+  color: #AD1414;
+  font-family: 'Cairo';
+  font-size: 26px;
+}
+body h2 {
   color: #AD1414;
   font-family: 'Cairo';
 }
-h2 {
+body h4 {
   color: #AD1414;
   font-family: 'Cairo';
 }
-.banner {
+body .banner {
   padding: 0px 0px;
   background: #eeeeee;
 }
