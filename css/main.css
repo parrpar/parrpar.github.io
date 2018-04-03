@@ -18,31 +18,42 @@ To compile:
   src: local('Kanit Light'), local('Kanit-Light'), url(https://fonts.gstatic.com/s/kanit/v3/nKKU-Go6G5tXcr4-ORWzVaQ.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Cairo';
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
-  src: local('Cairo'), local('Cairo-Regular'), url(https://fonts.gstatic.com/s/cairo/v3/SLXGc1nY6HkvalIhTp4.ttf) format('truetype');
+  src: local('Poppins Regular'), local('Poppins-Regular'), url(https://fonts.gstatic.com/s/poppins/v5/pxiEyp8kv8JHgFVrJJfedw.ttf) format('truetype');
 }
 /*---General Setting---*/
 body {
   padding-top: 0px;
 }
-body h1 {
+h1 {
   color: #AD1414;
-  font-family: 'Cairo';
+  font-family: 'Poppins';
   font-size: 26px;
+  letter-spacing: 2px;
+  margin-top: 40px;
 }
-body h2 {
+h2 {
   color: #AD1414;
-  font-family: 'Cairo';
+  font-family: 'Poppins';
 }
-body h4 {
+h3 {
+  font-family: 'Poppins';
+  font-weight: lighter;
+  font-size: 16px;
+  line-height: 1.6;
+}
+h4 {
   color: #AD1414;
-  font-family: 'Cairo';
+  font-family: 'Poppins';
 }
-body .banner {
+.banner {
   padding: 0px 0px;
   background: #eeeeee;
+}
+.container {
+  padding-top: 50;
 }
 /*---Button---*/
 .btn-primary {
@@ -91,17 +102,38 @@ fieldset[disabled] .btn-primary.active {
   color: #AD1414;
   background-color: #ffffff;
 }
+#mainNav .navbar-brand {
+  color: #fed136;
+  font-family: 'Fira Sans', cursive;
+}
 header.masthead {
   text-align: center;
-  color: #fff;
-  background-image: url(../img/header.jpg);
+  background-image: url(../img/par.png);
   background-repeat: no-repeat;
-  background-attachment: scroll;
+  height: 100vh;
+  background-attachment: fixed;
   background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
+}
+header.masthead .intro-text .intro-heading {
+  font-size: 47px;
+  line-height: 70px;
+  font-weight: 1000;
+  letter-spacing: 0.15em;
+  font-family: 'Poppins';
+  text-align: right;
+}
+header.masthead .intro-text2 {
+  font-size: 18px;
+  line-height: 70px;
+  font-weight: 1000;
+  letter-spacing: 0.15em;
+  font-family: 'Poppins';
+  text-align: right;
+}
+.img-first {
+  max-width: 50%;
+  height: auto;
 }
 .img-fluid {
   max-width: 100%;
@@ -110,6 +142,9 @@ header.masthead {
 img {
   vertical-align: middle;
   border-style: none;
+}
+.v1 {
+  align-items: center;
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
   position: absolute;

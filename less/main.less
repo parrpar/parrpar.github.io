@@ -7,22 +7,33 @@ To compile:
 */
 
 @import "https://fonts.googleapis.com/css?family=Kanit:300,300i&subset=thai";
-@import url('https://fonts.googleapis.com/css?family=Cairo');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
 @import "_variables.less";
 @import "_mixins.less";
 
 /*---General Setting---*/
 body{
   padding-top: 0px;
+
+}
 h1{
   color:@color-theme-primary;
   font-family: @font-primary;
   font-size: 26px;
+  letter-spacing: 2px;
+  margin-top: 40px;
 }
 
 h2{
   color:@color-theme-primary;
   font-family: @font-primary;
+}
+
+h3{
+  font-family: @font-primary;
+  font-weight: lighter;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 h4{
@@ -34,25 +45,53 @@ h4{
   padding: 0px 0px;
   background:#eeeeee;
 }
+
+.container{
+  padding-top: 50;
 }
+
 /*---Button---*/
 .btn-primary {
   &:extend(.btn all);
   .button-variant(#ffffff, @color-theme-primary, #000000);
 }
 
+#mainNav .navbar-brand {
+    color: #fed136;
+    font-family: 'Fira Sans',cursive;
+}
 
 header.masthead {
     text-align: center;
-    color: #fff;
-    background-image: url(../img/header.jpg);
+    background-image: url(../img/par.png);
     background-repeat: no-repeat;
-    background-attachment: scroll;
+    height: 100vh;
+    background-attachment: fixed;
     background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
+}
+
+header.masthead .intro-text .intro-heading {
+    font-size: 47px;
+    line-height: 70px;
+    font-weight: 1000;
+    letter-spacing: 0.15em;
+    font-family: @font-primary;
+    text-align: right;
+}
+header.masthead .intro-text2 {
+    font-size: 18px;
+    line-height: 70px;
+    font-weight: 1000;
+    letter-spacing: 0.15em;
+    font-family: @font-primary;
+    text-align: right;
+}
+
+.img-first{
+  max-width: 50%;
+  height: auto;
+
 }
 
 .img-fluid {
@@ -62,6 +101,10 @@ header.masthead {
 img {
     vertical-align: middle;
     border-style: none;
+}
+
+.v1{
+  align-items: center;
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
