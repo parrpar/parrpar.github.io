@@ -28,14 +28,14 @@ body {
   padding-top: 0px;
 }
 h1 {
-  color: #AD1414;
+  color: #6B0F1A;
   font-family: 'Poppins';
   font-size: 26px;
   letter-spacing: 2px;
   margin-top: 40px;
 }
 h2 {
-  color: #AD1414;
+  color: #6B0F1A;
   font-family: 'Poppins';
 }
 h3 {
@@ -45,8 +45,16 @@ h3 {
   line-height: 1.6;
 }
 h4 {
-  color: #AD1414;
+  color: #6B0F1A;
   font-family: 'Poppins';
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+.text-mute {
+  color: #6B0F1A;
+  font-family: 'Poppins';
+  font-size: 20px;
+  letter-spacing: 2px;
 }
 .banner {
   padding: 0px 0px;
@@ -58,7 +66,7 @@ h4 {
 /*---Button---*/
 .btn-primary {
   color: #ffffff;
-  background-color: #AD1414;
+  background-color: #6B0F1A;
   border-color: #000000;
 }
 .btn-primary:hover,
@@ -68,7 +76,7 @@ h4 {
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
   color: #ffffff;
-  background-color: #7f0f0f;
+  background-color: #3e090f;
   border-color: #000000;
 }
 .btn-primary:active,
@@ -95,16 +103,12 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #AD1414;
+  background-color: #6B0F1A;
   border-color: #000000;
 }
 .btn-primary .badge {
-  color: #AD1414;
+  color: #6B0F1A;
   background-color: #ffffff;
-}
-#mainNav .navbar-brand {
-  color: #fed136;
-  font-family: 'Fira Sans', cursive;
 }
 header.masthead {
   text-align: center;
@@ -122,6 +126,14 @@ header.masthead .intro-text .intro-heading {
   letter-spacing: 0.15em;
   font-family: 'Poppins';
   text-align: right;
+  text-shadow: 3px 3px 10px #000000;
+}
+header.masthead .caption {
+  font-size: 16px;
+  letter-spacing: 0.15em;
+  font-family: 'Poppins';
+  text-align: right;
+  text-shadow: 3px 3px 10px #000000;
 }
 .img-first {
   max-width: 50%;
@@ -147,6 +159,11 @@ img {
   transition: all ease .5s;
   opacity: 0;
   background: rgba(173, 20, 20, 0.8);
+}
+#mainNav.navbar-shrink {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #6B0F1A;
 }
 /*---Responsive (Bootstrap Standard)---*/
 /* Only Large devices (LG) */
