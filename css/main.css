@@ -153,6 +153,9 @@ img {
   vertical-align: middle;
   border-style: none;
 }
+.img-responsive {
+  width: 100%;
+}
 .v1 {
   align-items: center;
 }
