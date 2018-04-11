@@ -61,7 +61,7 @@ h4 {
   background: #eeeeee;
 }
 .container {
-  padding-top: 50;
+  padding-top: 0;
 }
 /*---Button---*/
 .btn-primary {
@@ -110,6 +110,9 @@ fieldset[disabled] .btn-primary.active {
   color: #6B0F1A;
   background-color: #ffffff;
 }
+section.bg-light {
+  padding-top: 0;
+}
 header.masthead {
   text-align: center;
   background-image: url(../img/par.png);
@@ -134,6 +137,9 @@ header.masthead .caption {
   font-family: 'Poppins';
   text-align: right;
   text-shadow: 3px 3px 10px #000000;
+}
+section {
+  padding: 50px;
 }
 .img-first {
   max-width: 50%;
